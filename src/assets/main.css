@@ -1,0 +1,589 @@
+@import "./base.css";
+
+@font-face {
+  font-family: "SequelSans";
+  src: url("../assets/SequelSans/Sequel\ Sans\ Black\ Disp.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Sequel Sans Book";
+  src: url("../assets/SequelSans/Sequel\ Sans\ Book\ Body.ttf")
+    format("truetype");
+}
+
+#app {
+  max-width: 1380px;
+  margin: 0 auto;
+  font-weight: normal;
+  font-family: "Sequel Sans Book", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.hero {
+  background-image: radial-gradient(
+    circle,
+    var(--gradient-color3),
+    var(--gradient-color2),
+    var(--gradient-color1)
+  );
+  animation: gradientAnimation 50s linear infinite alternate;
+  background-size: 300% 50%;
+  padding-bottom: 15em;
+  width: 84.3rem;
+  margin: auto;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 150%;
+  }
+}
+
+.hero h1 {
+  font-size: 5.4rem;
+  font-weight: 400;
+  mix-blend-mode: overlay;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+.hero video {
+  max-width: 76em;
+  height: 25rem;
+}
+
+.hero article {
+  font-family: "Sequel Sans Book", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 2.7rem;
+  font-weight: 400;
+  mix-blend-mode: overlay;
+  text-align: center;
+  padding: 1em 0em;
+  width: 22em;
+  margin: auto;
+}
+
+.hero p {
+  text-align: center;
+  font-family: "Sequel Sans Book", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.blackSection1,
+.blackSection2,
+.founding {
+  background-color: var(--neutral100);
+  color: var(--white);
+  width: 84.3rem;
+  margin: auto;
+}
+
+.section1 {
+  text-align: center;
+  font-family: "Sequel Sans Book", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  letter-spacing: 0.015em;
+}
+
+.section1 h2 {
+  font-size: 4.4rem;
+  font-weight: 300;
+  padding: 4em 0em 1em 0em;
+  line-height: 100%;
+}
+
+.section1 h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.section1 p,
+.neutralSection article,
+.blackSection2 article {
+  font-size: 2.3rem;
+  font-weight: 400;
+  width: 27em;
+  margin: auto;
+  color: var(--neutral300);
+  line-height: 1.6em;
+}
+
+.section1 img {
+  border-radius: 1em;
+  margin: 10em 0em 11em 0em;
+}
+
+.writeblock {
+  font-weight: 500;
+  padding: 4em 0em;
+  border-bottom: 0.1em solid rgb(217, 217, 213);
+  display: grid;
+  gap: 12em;
+  grid-template-columns: 1.3fr 2.5fr;
+  width: 56em;
+  margin: auto;
+  line-height: 2em;
+}
+
+.writeblock aside {
+  font-size: 1.9rem;
+}
+
+.writeblock p {
+  font-size: 1.7rem;
+  color: var(--neutral300);
+}
+
+.images3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 1em;
+  width: 54em;
+  margin: 8em auto 0em;
+  padding-bottom: 12em;
+}
+
+.images3 img {
+  border-radius: 1.5em;
+}
+
+.images3 p {
+  padding: 1.5em 0em 0.4em 0.15em;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.bottle {
+  margin: auto;
+  grid-column: 1/3;
+}
+
+.bottle img {
+  width: 54rem;
+}
+
+.neutralSection {
+  font-family: "Sequel Sans Book", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: var(--neutral700);
+  width: 84.3rem;
+  margin: auto;
+  text-align: center;
+}
+
+.neutralSection h2 {
+  font-size: 4.7rem;
+  font-weight: 400;
+  padding: 2.5em 0em 1em 0em;
+  line-height: 100%;
+}
+
+.neutralSection h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.threecards {
+  background-color: rgb(249, 239, 240);
+  display: flex;
+  margin: 6em auto 0.5em auto;
+  background-image: radial-gradient(
+      100% 50% at 50% 0,
+      #f5eaeb 2%,
+      #ebeada00 98%
+    ),
+    radial-gradient(100% 50% at 50% 100%, #ede9e4 1%, #f4f0e100 99%),
+    linear-gradient(0deg, #f8eff1 3%, #fdf3f4);
+  background-position: 0 0, 0 0, 0 0;
+  background-size: 100% 100%;
+  height: 50em;
+  justify-content: center;
+  align-items: center;
+}
+
+.bespoke {
+  text-align: center;
+  margin: auto;
+  color: var(--neutral300);
+  font-weight: 500;
+  font-size: 0.7rem;
+  padding-bottom: 8em;
+  border-bottom: 0.1em solid rgb(217, 217, 213);
+  width: 57rem;
+  letter-spacing: 0.05em;
+}
+
+.neutralSection .writeblock {
+  text-align: left;
+  gap: 12em;
+  line-height: 1.3;
+}
+
+.neutralSection .writeblock p {
+  font-weight: 400;
+  font-size: 1.57rem;
+}
+
+.neutralSection .writeblock aside {
+  font-size: 2rem;
+}
+
+.visa {
+  margin: 5em auto 0em auto;
+  border-bottom: 0.01em solid rgb(217, 217, 213);
+  padding-bottom: 5em;
+}
+
+.visa .plus {
+  font-size: 1.8rem;
+}
+
+.visa h3 {
+  letter-spacing: 0.03em;
+  color: var(--neutral100);
+  font-size: 2em;
+}
+
+.visaP {
+  font-size: 1.7rem;
+  color: var(--neutral300);
+  margin: 1.3em auto;
+  width: 17em;
+}
+
+.visa button {
+  background-color: transparent;
+  color: var(--neutral100);
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 0.4em 1.2em;
+  border: 0.08em solid rgb(217, 217, 213);
+  border-radius: 1em;
+}
+
+.womanContainer {
+  width: 59rem;
+  height: 49em;
+  overflow: hidden;
+  margin: auto auto 1em auto;
+  border-radius: 1.3em;
+  margin-top: 10em;
+}
+
+.woman video {
+  border-radius: 1.3em;
+  width: 100%;
+  height: auto;
+  transform: scale(1.2);
+}
+
+.world {
+  border: none;
+}
+
+.atlascards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 9em;
+}
+
+.cardFront {
+  background-image: linear-gradient(180deg, #cbcbcb, #e6e6e6);
+}
+
+.atlascards img {
+  border-radius: 2em;
+  width: 36em;
+  margin: 10em auto;
+}
+
+.cardBack {
+  background-image: linear-gradient(180deg, #5c5a59, #756f6d);
+}
+
+.fronttoback {
+  padding-bottom: 10em;
+}
+
+.more .writeblock {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.more .writeblock:last-child {
+  border: none;
+  padding-bottom: 9em;
+}
+
+.more .writeblock:last-child.last {
+  border-bottom: 0.01em solid rgb(217, 217, 213);
+  padding-bottom: 4em;
+}
+
+.powerCouple {
+  border-top: 0.01em solid rgb(217, 217, 213);
+}
+
+.phoneInHand {
+  background-color: rgb(218, 222, 230);
+  margin: 6em auto 0.5em auto;
+}
+
+.phoneInHand img {
+  height: 42em;
+  margin: 4.5em auto -0.2em auto;
+}
+
+.threeimages {
+  width: 56rem;
+  margin: auto;
+}
+
+.threeimages img {
+  border-radius: 1.3em;
+}
+
+.threeimages span {
+  text-align: left;
+  color: var(--neutral300);
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  margin: 1.5em 0em;
+}
+
+.moment,
+.virtualcards,
+.rewards {
+  display: grid;
+}
+
+.moment img {
+  width: 56rem;
+}
+
+.imageFlex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  margin-bottom: 12em;
+}
+
+.imageFlex img {
+  width: 27em;
+}
+
+.truly {
+  border-top: 0.1em solid rgb(217, 217, 213);
+}
+
+.supportChat {
+  width: 84.3em;
+  background-color: rgb(230, 230, 230);
+  margin: 8em auto 0.5em auto;
+}
+
+.supportChat img {
+  width: 54.3em;
+  padding: 5em 0em;
+  margin: auto;
+}
+
+.walletImg {
+  width: 56em;
+  margin: auto;
+  padding-bottom: 8em;
+}
+
+.walletImg img {
+  width: 56em;
+  margin-top: 6em;
+  border-radius: 1.3em;
+}
+
+.blackSection2 {
+  text-align: center;
+  font-family: "Sequel Sans Book", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  letter-spacing: 0.015em;
+}
+
+.blackSection2 h2 {
+  font-size: 6.4rem;
+  font-weight: 500;
+  padding: 2em 0em 0.5em 0em;
+}
+
+.blackSection2 h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.moreDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20em;
+  row-gap: 5em;
+  width: 56em;
+  margin: auto;
+  padding-top: 9em;
+  text-align: left;
+  border-bottom: 0.1em solid var(--neutral300);
+}
+
+.moreDetails ol {
+  display: grid;
+  gap: 0.8em;
+  list-style: none;
+  padding-top: 4em;
+  margin-bottom: 4em;
+}
+
+.moreDetails li,
+.founding p {
+  color: var(--neutral300);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.founding {
+  padding: 3em 0em;
+}
+
+.founding button {
+  background-color: var(--primary100);
+  color: var(--neutral800);
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 0.8em 1.1em;
+  margin-bottom: 0.5em;
+  border-radius: 1.5em;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 56em;
+  margin: 2em auto;
+  padding-bottom: 2em;
+  border-bottom: 0.1em solid rgb(0, 19, 145);
+}
+.links ul h3 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--neutral300);
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.links ul a {
+  text-decoration: none;
+  color: rgb(0, 19, 145);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+footer,
+.insurance {
+  display: grid;
+  width: 56em;
+  margin: auto;
+}
+
+footer ol,
+.insurance p {
+  display: grid;
+  gap: 0.6em;
+  font-size: 0.72rem;
+  color: var(--neutral300);
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+footer ol a {
+  color: var(--neutral300);
+}
+.insurance {
+  display: grid;
+  gap: 1em;
+  margin: 2em auto;
+}
+.fixed {
+  position: fixed;
+  left: 50%;
+  display: grid;
+  width: 57em;
+  background-color: #f0f0f052;
+  /* background-color: #757575; */
+  backdrop-filter: blur(1em);
+  box-shadow: 1em 4em 2em #0000000a;
+  border-radius: 1em;
+  transform: translate(-50%, 0);
+  justify-content: center;
+  margin: 2em 0em;
+  z-index: 200;
+}
+.fixed img {
+  height: 1.5em;
+}
+.fixed img:first-child {
+  height: 2.5em;
+}
+.fixedlogos {
+  display: flex;
+  justify-content: space-between;
+  width: 54rem;
+  margin: 0.7em auto;
+  align-items: center;
+}
+.fixedLinks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 57em;
+  border-top: 0.1em solid var(--neutral300);
+  padding: 2em;
+  display: none;
+}
+.fixedLinks ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.fixedLinks button {
+  height: 2.5em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.fixedLinks ul a {
+  text-decoration: none;
+  color: var(--neutral300);
+}
