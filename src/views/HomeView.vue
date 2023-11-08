@@ -37,7 +37,7 @@
       <section class="hero">
         <h1>No Limits</h1>
         <video autoplay muted>
-          <source src="../../assets/atlas-card.webm" type="video/webm" />
+          <source src="../assets/atlas-card.webm" type="video/webm" />
         </video>
         <article>
           This is your friend who scores the hottest tables in town, your passport to weekend
