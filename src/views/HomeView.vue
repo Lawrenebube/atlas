@@ -12,7 +12,7 @@ import inSure from '../components/insuranceComponent.vue'
 
 <template>
 
-    <div>
+    <div class="">
       <section class="hero">
         <h1>No Limits</h1>
         <video autoplay muted>
@@ -40,3 +40,14 @@ import inSure from '../components/insuranceComponent.vue'
   
   
 </template>
+
+<script>
+export default {
+ 
+};
+</script>
+<style scoped >
+
+</style>
+
+

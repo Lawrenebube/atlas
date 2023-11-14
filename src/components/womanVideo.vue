@@ -1,15 +1,18 @@
 <template>
-    <div id="card">
-        <section class="womanContainer">
+    <div id="card" class="neutralSection">
+      <div class="womanclip">
+        <section class="womanContainer" >
           <div class="woman">
             <video autoplay muted>
               <source src="../assets/atlas-woman.mp4" type="video/webm" />
             </video>
           </div>
         </section>
+      </div>
+
         <p class="bespoke world">THE WORLD IN YOUR HAND, WITH ATLAS CARD.</p>
 
-        <section class="neutralSection">
+        <section class="">
           <h2>Head Turner</h2>
           <h3>Designed to shatter the norm.</h3>
           <article>
@@ -51,3 +54,4 @@
         </div>
     </div>
 </template>
+  

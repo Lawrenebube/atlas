@@ -9,7 +9,7 @@
             </article>
         </section>
         <div class="phoneInHand">
-            <img src="../assets/images/phone-in-hand-desktop.webp" />
+            <img src="../assets/images/phone-in-hand-desktop.webp" alt="phone-in-hand"/>
         </div>
         <p class="bespoke fronttoback">FAR ABOVE THE TYPICAL APP EXPERIENCE.</p>
         <section class="writeblock">
