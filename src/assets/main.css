@@ -674,7 +674,7 @@ footer ol a {
     max-width: 35em;
   }
   .hero article {
-    width: 8em;
+    width: 18em;
   }
   .blackSection1,
   .blackSection2,
@@ -685,7 +685,7 @@ footer ol a {
   .section1 p,
   .neutralSection article,
   .blackSection2 article {
-    width: 10em;
+    width: 18em;
     padding: auto 0em;
   }
   .writeblock {
@@ -712,9 +712,6 @@ footer ol a {
   .threeimages {
     width: auto;
     padding: 3em 2em;
-  }
-  .threeimages img {
-    /* width: 10em; */
   }
   .moment {
     width: 46rem;
