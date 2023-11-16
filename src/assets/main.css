@@ -804,15 +804,31 @@ footer ol a {
     padding: 0em 2em;
   }
   .fixed {
-    /* width: 40em; */
+    width: fit-content;
     left: 50%;
-    display: none;
+    /* display: none; */
   }
   .fixedlogos {
-    max-width: auto;
+    width: 30em;
+    padding: 0.5em 1em;
+  }
+  .fixedThings {
+    width: fit-content;
+  }
+  .fixedLinks {
+    gap: 3em;
+  }
+  .fixedLinks ul:last-child {
+    display: none;
+  }
+  .fixedThings button {
+    display: grid;
+    grid-column: 1;
+    margin: 1em 3em;
   }
   h2 {
     width: 4em;
     margin: auto;
   }
+
 }
