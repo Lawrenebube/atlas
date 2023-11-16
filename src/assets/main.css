@@ -682,7 +682,7 @@ footer ol a {
   }
   .hero video {
     transform: scale(1.5);
-    max-width: 45em;
+    max-width: 49em;
   }
   .hero article {
     width: 11em;
@@ -832,6 +832,7 @@ footer ol a {
   }
   .fixed {
     margin: auto;
+    top: 2%;
   }
 
   .fixedLinks {
