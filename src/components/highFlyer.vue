@@ -8,9 +8,9 @@
         </article>
         <div class="threecards">
             <picture>
-                <source media="(min-width:650px)" srcset="../assets/images/flexcard.JPG" />
-                <source media="(min-width:465px)" srcset="../assets/images/flexcard.JPG" />
-                <img src="../assets/images/flexcard.JPG" alt="Description of the image" />
+                <source media="(min-width:800px)" srcset="../assets/images/flexcard.JPG" />
+                <source media="(max-width:768px)" srcset="../assets/images/travel.webp" />
+                <img src="../assets/images/travel.webp" alt="Description of the image" />
             </picture>
         </div>
         <p class="bespoke">BESPOKE FLIGHT BENEFITS, INSIDE ATLAS APP.</p>

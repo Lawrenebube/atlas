@@ -1,5 +1,10 @@
 @import "./base.css";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @font-face {
   font-family: "SequelSans";
   src: url("../assets/SequelSans/Sequel\ Sans\ Black\ Disp.ttf")
@@ -11,9 +16,13 @@
   src: url("../assets/SequelSans/Sequel\ Sans\ Book\ Body.ttf")
     format("truetype");
 }
+body {
+}
 
 #app {
+  display: grid;
   max-width: 1380px;
+  width: fit-content;
   margin: 0 auto;
   font-weight: normal;
   font-family: "Sequel Sans Book", system-ui, -apple-system, BlinkMacSystemFont,
@@ -36,11 +45,7 @@
   width: 84.3rem;
   margin: auto;
 }
-@media screen and (max-width: 480px) {
-  .hero {
-    width: ;
-  }
-}
+
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -129,9 +134,8 @@
   padding-bottom: 3em;
   color: var(--neutral300);
   line-height: 1.6em;
-  margin-bottom: -3.9em;
+  margin-bottom: -3em;
 }
-
 .section1 img {
   border-radius: 1em;
   margin: 10em 0em 11em 0em;
@@ -222,10 +226,14 @@
     linear-gradient(0deg, #f8eff1 3%, #fdf3f4);
   background-position: 0 0, 0 0, 0 0;
   background-size: 100% 100%;
-  height: 50em;
+  /* height: 50em; */
   justify-content: center;
   align-items: center;
 }
+.threecards img {
+  padding: 10em ;
+}
+
 
 .bespoke {
   text-align: center;
@@ -273,7 +281,8 @@
 .visaP {
   font-size: 1.7rem;
   color: var(--neutral300);
-  margin: 1.3em auto;
+  padding: 1.3em auto;
+  margin: auto;
   width: 17em;
 }
 
@@ -291,7 +300,6 @@
   height: 49em;
   overflow: hidden;
   margin: 10em auto 1em auto;
-  /* padding-top: 10em; */
   border-radius: 1.3em;
 }
 .womanclip {
@@ -301,7 +309,6 @@
 .woman video {
   border-radius: 1.3em;
   width: 100%;
-  /* margin: auto; */
   height: auto;
   transform: scale(1.2);
 }
@@ -541,6 +548,9 @@ footer ol,
 .insurance p {
   display: grid;
   gap: 0.6em;
+  margin: auto;
+  align-items: center;
+  align-content: center;
   font-size: 0.72rem;
   color: var(--neutral300);
   letter-spacing: 0.03em;
@@ -554,9 +564,7 @@ footer ol a {
   gap: 1em;
   margin: 2em auto;
 }
-@media (max-width:768px) {
-  
-}
+
 .fixed {
   position: fixed;
   left: 50%;
@@ -645,4 +653,165 @@ footer ol a {
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
+}
+@media (max-width: 768px) {
+  body {
+    /* max-width: 30rem; */
+    margin: auto;
+    padding: auto 2em;
+  }
+  #app {
+    display: grid;
+    max-width: auto;
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+  }
+  .hero {
+    width: auto;
+  }
+  .hero video {
+    max-width: 35em;
+  }
+  .hero article {
+    width: 8em;
+  }
+  .blackSection1,
+  .blackSection2,
+  .founding {
+    width: auto;
+    padding: auto;
+  }
+  .section1 p,
+  .neutralSection article,
+  .blackSection2 article {
+    width: 10em;
+    padding: auto 0em;
+  }
+  .writeblock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4em 1.5em;
+    width: auto;
+    margin: auto;
+    gap: 0.8em;
+  }
+  .images3 {
+    width: auto;
+    margin: auto 2em;
+  } 
+  .threecards {
+    background-image: linear-gradient(#F2E4E9, #E8E3D9);
+    margin: 0;
+    padding: 0;
+  }
+  .threecards img {
+    width: 53em; 
+    padding: 2em;
+  }
+  .threeimages {
+    width: auto;
+    padding: 3em 2em;
+  }
+  .threeimages img {
+    /* width: 10em; */
+  }
+  .moment {
+    width: 46rem;
+
+  }
+  .supportChat {
+    width: auto;
+  }
+  .supportChat img {
+    width: 33em;
+  }
+  .visaP {
+    width: auto;
+    padding: 1.2em;
+  }
+  .walletImg {
+    width: auto;
+  }
+  .walletImg img {
+    width: 33em;
+  }
+  .neutralSection {
+    width: auto;
+  }
+  .section1 img {
+    margin: 5em auto;
+    width: 23em;
+  }
+  .bespoke {
+    width: auto;
+    margin: auto;
+  }
+  .neutralSection .writeblock {
+    gap: 1em;
+  }
+  .womanclip {
+    margin: 0em 2em;
+  }
+  .womanContainer {
+    width: auto;
+    padding: 0em 2em;
+  }
+  .atlascards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em 2em;
+    border-radius: 2em;
+  }
+  .atlascards img {
+    width: 22em;
+    padding: 1em;
+  }
+  .cardBack {
+    border-radius: 0em 0em 2em 2em;
+  }
+  .cardFront {
+    border-radius: 2em 2em 0em 0em;
+  }
+  .phoneInHand img {
+    height: 20em;
+  }
+  .moreDetails {
+    display: grid;
+    row-gap: 5em;
+    margin: auto 2em;
+    width: auto;
+    column-gap: 1em;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    width: auto;
+    padding-left: 2em;
+  }
+  .links div {
+    display: grid;
+    grid-row: 1/1;
+  }
+  .links ul a {
+    font-size: 1rem;
+  }
+  footer,
+  .insurance {
+    width: auto;
+    padding: 0em 2em;
+  }
+  .fixed {
+    width: auto;
+    left: 50%;
+    display: none;
+  }
+  .fixedlogos {
+    max-width: auto;
+  }
+  h2 {
+    width: 6em;
+    margin: auto;
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-        <div class="blackSection2" id="benefits">
+  <div class="blackSection2" id="benefits">
     <h2>Executive, brief.</h2>
     <h3>Your next journey begins here.</h3>
     <article>
@@ -67,5 +67,5 @@
       <button>Become a founding member</button>
       <p>$999/yr.</p>
     </section>
-  </div> 
+  </div>
 </template>

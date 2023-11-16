@@ -26,8 +26,12 @@
         </section>
         <div class="images3">
             <div class="bottle">
-                <img src="../assets/images/horses.JPG"
-                    alt="a served table with a plate of noodles with a knife and fork, an empty class cup and an opened bottle" />
+                <picture class="bottle">
+                    <source media="(min-width:650px)" srcset="../assets/images/horses.JPG">
+                    <source media="(min-width:465px)" srcset="../assets/images/bottle.jpg">
+                    <img src="../assets/images/bottle.jpg"
+                        alt="a served table with a plate of noodles with a knife and fork, an empty class cup and an opened bottle"/>
+                </picture>
                 <p>HORSES, LA, ON ATLAS SUPPER CLUB.</p>
             </div>
             <div>

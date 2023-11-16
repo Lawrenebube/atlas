@@ -52,6 +52,4 @@
     </div>
 </template>
 <style scoped>
-.neutralSection {
-}
 </style>
