@@ -61,11 +61,11 @@ body {
 }
 
 .hero h1 {
-  font-size: 5.4rem;
+  font-size: 7.5rem;
   font-weight: 400;
   mix-blend-mode: overlay;
   text-align: center;
-  padding-top: 1.5em;
+  padding-top: 1em;
 }
 
 .hero video {
@@ -211,6 +211,7 @@ body {
 .neutralSection h3 {
   font-size: 2.2rem;
   font-weight: 500;
+  padding-bottom: 0.8em;
 }
 
 .threecards {
@@ -231,9 +232,8 @@ body {
   align-items: center;
 }
 .threecards img {
-  padding: 10em ;
+  padding: 10em;
 }
-
 
 .bespoke {
   text-align: center;
@@ -375,8 +375,8 @@ body {
 
 .threeimages {
   width: 56rem;
-  margin: auto auto -12em auto;
-  padding-bottom: 10em;
+  margin: 10em auto 0em auto;
+  padding-bottom: 5em;
 }
 
 .threeimages img {
@@ -458,6 +458,7 @@ body {
 .blackSection2 h3 {
   font-size: 1.8rem;
   font-weight: 500;
+  padding-bottom: 0.8em;
 }
 
 .moreDetails {
@@ -656,7 +657,7 @@ footer ol a {
 }
 @media (max-width: 768px) {
   body {
-    /* max-width: 30rem; */
+    max-width: 375px;
     margin: auto;
     padding: auto 2em;
   }
@@ -670,52 +671,55 @@ footer ol a {
   .hero {
     width: auto;
   }
+  .heros-video-container {
+    padding-top: 2.5em;
+  }
+
   .hero video {
-    max-width: 35em;
+    transform: scale(1.5);
+    max-width: 45em;
   }
   .hero article {
-    width: 18em;
+    width: 11em;
   }
   .blackSection1,
   .blackSection2,
   .founding {
     width: auto;
-    padding: auto;
+    padding: 2em ;
   }
   .section1 p,
   .neutralSection article,
   .blackSection2 article {
-    width: 18em;
-    padding: auto 0em;
+    width: 14em;
+    padding:  0em;
   }
   .writeblock {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 4em 1.5em;
+    padding: 4em 1em;
     width: auto;
-    margin: auto;
+    margin: auto 3em;
     gap: 0.8em;
   }
   .images3 {
     width: auto;
-    margin: auto 2em;
-  } 
+    margin: 2em 3em;
+  }
   .threecards {
-    background-image: linear-gradient(#F2E4E9, #E8E3D9);
+    background-image: linear-gradient(#f2e4e9, #e8e3d9);
     margin: 0;
     padding: 0;
   }
   .threecards img {
-    width: 53em; 
-    padding: 2em;
+    width: 53em;
+    padding: 3em;
   }
   .threeimages {
     width: auto;
-    padding: 3em 2em;
   }
   .moment {
     width: 46rem;
-
   }
   .supportChat {
     width: auto;
@@ -748,16 +752,16 @@ footer ol a {
     gap: 1em;
   }
   .womanclip {
-    margin: 0em 2em;
+    margin: 0em 3em;
   }
   .womanContainer {
     width: auto;
-    padding: 0em 2em;
+    padding: 0em 3em;
   }
   .atlascards {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 1em 2em;
+    padding: 1em 3em;
     border-radius: 2em;
   }
   .atlascards img {
@@ -776,7 +780,7 @@ footer ol a {
   .moreDetails {
     display: grid;
     row-gap: 5em;
-    margin: auto 2em;
+    margin: auto 3em;
     width: auto;
     column-gap: 1em;
   }
@@ -785,7 +789,7 @@ footer ol a {
     grid-template-columns: 1fr;
     gap: 2em;
     width: auto;
-    padding-left: 2em;
+    padding-left: 3em;
   }
   .links div {
     display: grid;
@@ -800,7 +804,7 @@ footer ol a {
     padding: 0em 2em;
   }
   .fixed {
-    width: auto;
+    /* width: 40em; */
     left: 50%;
     display: none;
   }
@@ -808,7 +812,7 @@ footer ol a {
     max-width: auto;
   }
   h2 {
-    width: 6em;
+    width: 4em;
     margin: auto;
   }
 }

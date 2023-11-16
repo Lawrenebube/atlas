@@ -15,9 +15,13 @@ import inSure from '../components/insuranceComponent.vue'
     <div class="home">
       <section class="hero">
         <h1>No Limits</h1>
+        <div class="heros-video-container">
+
         <video autoplay muted>
           <source src="../assets/atlas-card.webm" type="video/mp4" />
         </video>
+      </div>
+
         <article>
           This is your friend who scores the hottest tables in town, your passport to weekend
           getaways, and your guest pass to must-see events. All brilliantly brought together in a card
